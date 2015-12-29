@@ -1,0 +1,18 @@
+{
+    "contents" : "#edit thehindu.csv to any other .csv file\n\ndata1 <- read.csv(\"thehindu.csv\", sep=\"\\t\", fileEncoding=\"UTF-16LE\")\n\nIsRetweet <- data1[5]\n\nIsRetweet = c(IsRetweet)\nlist <- IsRetweet[[1]][]\n\ntotal <- length(list)\n\ntweets <- 0\nretweets <- 0\n\nfor(i in 1:total){\n\n  if(list[i] == \"\\\"0\\\"\"){\n    tweets <- tweets + 1   \n  }else{\n    retweets <- retweets + 1\n  }\n}\n\nGeneration = tweets/total * 100\nMediation = retweets/total * 100\n\n\nGeneration\nMediation\n",
+    "created" : 1450345433102.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2323115700",
+    "id" : "371C2D5C",
+    "lastKnownWriteTime" : 1450352452,
+    "path" : "~/Desktop/Twitter Classification/twitterclass.R",
+    "project_path" : "twitterclass.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

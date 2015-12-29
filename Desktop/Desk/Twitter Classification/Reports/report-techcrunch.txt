@@ -1,0 +1,32 @@
+> data1 <- read.csv("techcrunch.csv", sep="\t", fileEncoding="UTF-16LE")
+
+> IsRetweet <- data1[5]
+
+> IsRetweet = c(IsRetweet)
+
+> list <- IsRetweet[[1]][]
+
+> total <- length(list)
+
+> tweets <- 0
+
+> retweets <- 0
+
+> for(i in 1:total){
++ 
++   if(list[i] == "\"0\""){
++     tweets <- tweets + 1   
++   }else{
++     retweets <- retweets + 1
++   }
++ }
+
+> Generation = tweets/total * 100
+
+> Mediation = retweets/total * 100
+
+> Generation
+[1] 97.77778
+
+> Mediation
+[1] 2.222222
